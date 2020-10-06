@@ -1,0 +1,245 @@
+// 首页的样式less文件
+// @import 把一个样式文件导入另一个样式文件中
+@import "common";
+
+body{
+    min-width: 320px;
+    width: 15rem;
+    height: 2000px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial,Helvetica,STHeiTi,sans-serif;
+    background: #f2f2f2;
+}
+
+li{
+    list-style: none;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+h2,p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+@baseFont:50;
+.search-content{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15rem;
+    height: 88rem / @baseFont;
+    background-color: #ffc000;
+    .classify{
+        width: 44rem / @baseFont;
+        height: 70rem / @baseFont;
+        margin:11rem / @baseFont 25rem / @baseFont 7rem / @baseFont 24rem / @baseFont;
+        img{
+            width: 100%;
+        }
+    }
+    .search{
+        flex: 1;
+        height: 60rem / @baseFont;
+        line-height: 60rem / @baseFont;
+        border-radius: 30rem / @baseFont;
+        margin-top: 14rem / @baseFont;
+        padding-left: 40rem / @baseFont;
+        background-color: #fff;
+        color: rgb(122, 121, 121);
+        font-size: 24rem / @baseFont;
+    }
+    .login{
+        width: 36rem / @baseFont;
+        height: 60rem / @baseFont;
+        margin:11rem / @baseFont 25rem / @baseFont 7rem / @baseFont 24rem / @baseFont;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.banner{
+    width:750rem / @baseFont ;
+    height: 368rem / @baseFont;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.ad{
+    display: flex;
+    a{
+        flex:1;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.nav{
+    width: 750rem / @baseFont;
+    height: 280rem / @baseFont;
+    a{
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        width: 150rem / @baseFont;
+        height: 140rem / @baseFont;
+        img{
+            display: block;
+            width: 84rem / @baseFont;
+            height: 84rem / @baseFont;
+            margin: 10rem / @baseFont auto 0;
+        }
+        span{
+            display: block;
+            font-size:25rem / @baseFont;
+            line-height: 40rem / @baseFont;
+            color: #333;
+        }
+
+    }
+}
+
+.img-floor{
+    width: 750rem / @baseFont;
+    margin-top: 25rem / @baseFont;
+    margin-bottom: 25rem / @baseFont;
+    display: flex;
+    a{
+        &:nth-child(1){
+            width: 373rem / @baseFont;
+            height: 234rem / @baseFont;
+            background-color: pink;
+        } 
+        &:nth-child(n+2){
+            width: 186rem / @baseFont;
+            height: 234rem / @baseFont;
+            margin-left: 2px;
+            background-color: purple;
+        }    
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.hot-row1{
+    border-top-left-radius: 30rem / @baseFont;
+    border-top-right-radius: 30rem / @baseFont;
+}
+
+.hot-row{
+    display: flex;
+    width: 710rem / @baseFont;
+    height: 298rem / @baseFont;
+    margin: 0 auto ;
+    background-color: #fff;
+    .space-gap{
+        width: 1px;
+        height: 298rem / @baseFont;
+        background-color: #f2f2f2;
+    }
+    .hot-column{
+        width: 350rem / @baseFont;
+        height: 298rem / @baseFont;
+        padding: 20rem / @baseFont 0  0 20rem / @baseFont;
+    }
+    .title-wrapper{
+        font-weight: 700;
+        font-size:30rem / @baseFont;
+        color: #000;
+    }
+    .desc{
+        font-size: 20rem / @baseFont;
+        color: #999;
+    }
+    ul{
+        display: flex;
+        width: 355rem / @baseFont;
+        height: 128rem / @baseFont;
+        margin: 0;
+        padding: 0;
+        li{
+            width: 160rem / @baseFont;
+            height: 128rem / @baseFont;
+            text-align: center;
+            img{
+                width: 80%;
+            }
+            span{
+                display: block;
+                font-size: 25rem / @baseFont;
+                color: #F50;
+            }
+            .text-des{
+                color: #333;
+                font-size: 22rem / @baseFont;
+            }
+        }
+    }
+}
+
+.space-px{
+    width: 710rem / @baseFont;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+.commend{
+    display: flex;
+    width: 710rem / @baseFont;
+    height: 172rem / @baseFont;
+    margin: 0 auto;
+    background-color: #fff;
+    .left-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30rem / @baseFont;
+        width: 173rem / @baseFont;
+        height: 172rem / @baseFont;
+        
+        h2{
+            font-size: 32rem / @baseFont;
+        }
+        p{
+            font-size: 25rem / @baseFont;
+        }
+    }
+    .right-goods{
+        display: flex;
+        width: 508rem / @baseFont;
+        height: 172rem / @baseFont;
+        a{
+            position: relative;
+            width: 125rem / @baseFont;
+            height: 172rem / @baseFont;
+            text-align: center;
+            img{
+                margin-top: 20rem / @baseFont;
+                width: 100rem / @baseFont;
+            }
+            p{
+                width: 125rem / @baseFont;
+                position: absolute;
+                top: 126rem / @baseFont;
+                text-align: center;
+                color: #333;
+                font-size: 22rem / @baseFont;
+            }
+        }
+    }
+}
